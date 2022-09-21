@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes text {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#nav-logo {
+  background-clip: text;
+  background: url("https://vivaldi.com/wp-content/uploads/colors-1024x656.png");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text 3s linear infinite;
+}
